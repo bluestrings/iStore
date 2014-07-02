@@ -1,0 +1,33 @@
+{
+    "name": "iStore",
+    "desc": "description of your app",
+    "type": "clam",
+	"isH5": "true",
+	"port":"8081",
+	"proxyPort":"8080",
+	"group":"trip",
+	"src":"true",
+    "cssCompile":"less",
+	"version":"0.1.0",
+	"combohtml":"true",
+	"env":"publish",
+	"htmlProxy": [{
+		"urlReg": "^http://trip.taobao.com/index$",
+		"demoPage": "http://trip.taobao.com/index.php",
+		"replacements": [{
+			"fragment": "mods/demo/index.html",
+			"selector": "#lg"
+		}, {
+			"fragment": "mods/nav/index.html",
+			"selector": "#nv"
+		}]
+	}],
+    "author": {
+        "name": "",
+        "email": ""
+    },
+	"repository": {
+        "type": "git",
+        "url": "http://gitlab.alibaba-inc.com/trip/iStore"
+    }
+}
